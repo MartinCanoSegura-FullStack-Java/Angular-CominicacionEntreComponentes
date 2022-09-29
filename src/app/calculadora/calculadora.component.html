@@ -1,0 +1,37 @@
+<p>calculadora works!</p>
+
+<h2> * titulo desde el mismo hijo - calculadora</h2>
+
+<h2> {{ tituloPadre }} </h2>
+
+
+
+
+
+
+<h3>"One Way Binding" (enlace en un sentido)</h3>
+
+<input type="number" (keyup)="recibirTecla1($event)">
+<input type="number" (keyup)="recibirTecla2($event)">
+
+<button (click)="calcular('s')">Suma</button>
+<button (click)="calcular('r')">Resta</button>
+<button (click)="calcular('m')">Multiplicacion</button>
+<button (click)="calcular('d')">Division</button>
+
+<h4>El resultado es: {{ total }}</h4>
+
+<p>------------------------------------------------------------------------</p>
+
+<h3>"Two Way Binding" (enlace en dos sentido)</h3>
+<input type="number" [(ngModel)]="num3">
+<input type="number" [(ngModel)]="num4">
+
+<button (click)="calcula('s')">Suma</button>
+<button (click)="calcula('r')">Resta</button>
+<button (click)="calcula('m')">Multiplicacion</button>
+<button (click)="calcula('d')">Division</button>
+
+<!-- LO PONEMOS EN EL PADRE-->
+<!--<h4>El resultado es: {{ tot }}</h4>-->
+

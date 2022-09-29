@@ -1,0 +1,67 @@
+<!-- {{title}} -->
+
+<!-- <app-compa></app-compa>
+<app-compb></app-compb>
+<app-compc></app-compc> -->
+
+
+<!--<app-calculadora [tituloPadre]="'* Titulo desde el Padre - App'"></app-calculadora>-->
+<app-calculadora (emisor)="recibirEmision($event)" [tituloPadre]="x"></app-calculadora>
+
+<h4>El resultado en el App es: {{ totalRecibido }}</h4>
+
+
+<!--  BOOTSTRAP -->
+<p>----------------------------------------------- BOOTSTRAP -------------------------------------------</p>
+<div class="alert alert-primary" role="alert">
+  A simple primary alert—check it out!
+</div>
+<div class="alert alert-secondary" role="alert">
+  A simple secondary alert—check it out!
+</div>
+<div class="alert alert-success" role="alert">
+  A simple success alert—check it out!
+</div>
+<div class="alert alert-danger" role="alert">
+  A simple danger alert—check it out!
+</div>
+<div class="alert alert-warning" role="alert">
+  A simple warning alert—check it out!
+</div>
+<div class="alert alert-info" role="alert">
+  A simple info alert—check it out!
+</div>
+<div class="alert alert-light" role="alert">
+  A simple light alert—check it out!
+</div>
+<div class="alert alert-dark" role="alert">
+  A simple dark alert—check it out!
+</div>
+
+
+<!-- ANGULAR MATERIAL -->
+<p>---------------------------------------------------------------- BOTONES ANGULAR MATERIAL -------------------------------------------------------------------</p>
+<section>
+  <div class="example-label">Basic</div>
+  <div class="example-button-row">
+    <button mat-button>Basic</button>
+    <button mat-button color="primary">Primary</button>
+    <button mat-button color="accent">Accent</button>
+    <button mat-button color="warn">Warn</button>
+    <button mat-button disabled>Disabled</button>
+    <a mat-button href="https://www.google.com/" target="_blank">Link</a>
+  </div>
+</section>
+
+
+<p>---------------------- LISTA ANGULAR  MATERIAL---------------------</p>
+<mat-list role="list">
+  <mat-list-item role="listitem">Item 1</mat-list-item>
+  <mat-list-item role="listitem">Item 2</mat-list-item>
+  <mat-list-item role="listitem">Item 3</mat-list-item>
+</mat-list>
+
+
+<!-- PRIME NG -->
+<p>---------------------------------------------------------------- PRIME NG -------------------------------------------------------------------</p>
+<!--<p-rating [(ngModel)]="val"></p-rating>-->
